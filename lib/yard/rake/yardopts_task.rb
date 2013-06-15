@@ -9,6 +9,7 @@ module YARD
       VERSION = '0.0.1'
 
       def initialize
+        @name = '.yardopts'
       end
     end
   end
