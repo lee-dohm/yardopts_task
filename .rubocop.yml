@@ -1,0 +1,7 @@
+
+Encoding:
+  Enabled: false
+
+LineLength:
+  Enabled: true
+  Max: 132
