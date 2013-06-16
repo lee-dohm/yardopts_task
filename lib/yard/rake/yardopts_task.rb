@@ -8,8 +8,16 @@ module YARD
       # Version of the gem.
       VERSION = '0.0.1'
 
-      def initialize
+      def initialize(*args)
         @name = '.yardopts'
+
+        parse_arguments(args)
+      end
+
+      private
+
+      def parse_arguments(args)
+        @name = args.first if args.count > 0 && !(args.first.is_a?(Array))
       end
     end
   end
